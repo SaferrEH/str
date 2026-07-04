@@ -1,3 +1,29 @@
-<video controls width="100%">
-  <source src="str_ordinance.mp4" type="video/mp4">
-</video>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    video {
+      width: min(100vw, 540px);
+      height: auto;
+      max-height: 95vh;
+      object-fit: contain;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <video controls playsinline>
+    <source src="str_ordinance.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
